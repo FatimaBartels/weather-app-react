@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,6 +10,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
@@ -34,8 +36,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary"
-                w-100="true"
+                className="btn btn-primary w-100"
               />
             </div>
           </div>
@@ -43,7 +44,9 @@ export default function Weather(props) {
         <h2>{props.defaultCity}</h2>
 
         <ul>
-          <li>Wednesday 07:00</li>
+          <li>
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
