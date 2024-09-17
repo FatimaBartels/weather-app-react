@@ -1,10 +1,16 @@
+body {
+  background-color: #daf4f5;
+}
+
 .Weather {
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #dadde1;
-  padding: 16px;
-  margin: 30px auto;
-  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #c4dce0;
+  background-color: #daf4f5;
+  padding: 20px;
+  margin: 60px auto 30px;
+  border-radius: 6px;
   color: rgb(135, 135, 135);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .Weather form {
@@ -12,10 +18,10 @@
 }
 
 .Weather h1 {
-  color: #878787;
+  color: #504f4f;
   margin: 20px 0 0 0;
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 35px;
+  font-weight: 400;
   line-height: 29px;
 }
 .Weather ul {
@@ -25,7 +31,7 @@
 
 .Weather li {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 19px;
   list-style: none;
 }
