@@ -1,60 +1,128 @@
 body {
-  background-color: #daf4f5;
+  background-color: #b9ddd9;
 }
 
 .Weather {
   font-family: "Montserrat", sans-serif;
-  border: 1px solid #c4dce0;
-  background-color: #daf4f5;
+  border: 1px solid #b9ddd9;
+  background-color: #b9ddd9;
   padding: 20px;
   margin: 60px auto 30px;
-  border-radius: 6px;
-  color: rgb(135, 135, 135);
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  color: rgba(135, 135, 135, 0.808);
+  box-shadow: -3px 1px 31px -2px rgba(138, 136, 136, 0.61);
 }
 
 .Weather form {
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+.form-control {
+  border-radius: 40px;
+  max-width: 100%;
+  border: none;
+  background-color: #c3e9e4;
+  color: rgb(162, 229, 231);
+}
+
+.btn-info {
+  border-radius: 40px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #c3e9e4;
+  color: #555555;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.btn-info:hover {
+  background-color: #85ccc3;
+  border: none;
+  color: white;
 }
 
 .Weather h1 {
-  color: #504f4f;
+  color: #555555;
   margin: 20px 0 0 0;
   font-size: 35px;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.5;
 }
-.Weather ul {
-  margin: 0;
-  padding: 0;
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #555555;
+}
+
+.todaysWeather {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+ul {
+  margin-top: 5px;
 }
 
 .Weather li {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 19px;
   list-style: none;
+  color: #555555;
 }
 
 .Weather canvas {
-  margin-top: 5px;
-  margin-right: 10px;
   display: inline-block;
 }
 
-.Weather .temperature {
-  font-weight: bold;
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 64px;
+.temperature {
+  font-size: 68px;
+  font-weight: 300;
+  color: #555555;
+  margin-top: 20px;
 }
 
 .Weather .unit {
-  font-size: 16px;
-  color: rgb(33, 33, 33);
+  font-size: 22px;
+  color: #555555;
   font-weight: 400;
   position: relative;
   line-height: 1;
-  top: -34px;
+  top: -60px;
+  right: -78px;
+}
+
+@media (max-width: 600px) {
+  .Weather .todaysWeather {
+    flex-direction: column;
+  }
+
+  .Weather h1 {
+    font-size: 25px;
+  }
+  .Weather li,
+  p {
+    font-size: 12px;
+  }
+  .temperature {
+    font-size: 46px;
+    margin-top: 20px;
+  }
+
+  .Weather .unit {
+    font-size: 18px;
+    top: -52px;
+    right: -60px;
+  }
+
+  .Weather canvas {
+    width: 50px;
+  }
+
+  .btn-info {
+    font-size: 11px;
+  }
 }
