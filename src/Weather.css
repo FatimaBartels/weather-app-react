@@ -1,13 +1,13 @@
 body {
-  background-color: #b9ddd9;
+  background-color: #cfe9ee;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Weather {
-  font-family: "Montserrat", sans-serif;
   border: 1px solid #b9ddd9;
-  background-color: #b9ddd9;
+  background-color: #d9edf1;
   padding: 20px;
-  margin: 60px auto 30px;
+  margin: 100px auto 30px;
   border-radius: 10px;
   color: rgba(135, 135, 135, 0.808);
   box-shadow: -3px 1px 31px -2px rgba(138, 136, 136, 0.61);
@@ -21,8 +21,8 @@ body {
   border-radius: 40px;
   max-width: 100%;
   border: none;
-  background-color: #c3e9e4;
-  color: rgb(162, 229, 231);
+  background-color: #eaf1f1;
+  color: rgb(188, 221, 221);
 }
 
 .btn-info {
@@ -30,22 +30,24 @@ body {
   width: 100%;
   background-color: transparent;
   border: 1px solid #c3e9e4;
-  color: #555555;
+  color: #092238;
   font-size: 14px;
   padding: 8px;
+  transition: all 220ms ease-in-out;
 }
 
 .btn-info:hover {
   background-color: #85ccc3;
-  border: none;
+  border: 1px solid #c3e9e4;
   color: white;
+  padding: 8px;
 }
 
 .Weather h1 {
-  color: #555555;
+  color: #092238;
   margin: 20px 0 0 0;
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -53,7 +55,7 @@ p {
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
-  color: #555555;
+  color: #092238;
 }
 
 .todaysWeather {
@@ -71,7 +73,7 @@ ul {
   font-weight: 300;
   line-height: 19px;
   list-style: none;
-  color: #555555;
+  color: #092238;
 }
 
 .Weather canvas {
@@ -81,13 +83,13 @@ ul {
 .temperature {
   font-size: 68px;
   font-weight: 300;
-  color: #555555;
+  color: #092238;
   margin-top: 20px;
 }
 
 .Weather .unit {
-  font-size: 22px;
-  color: #555555;
+  font-size: 24px;
+  color: #092238;
   font-weight: 400;
   position: relative;
   line-height: 1;

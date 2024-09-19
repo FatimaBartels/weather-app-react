@@ -1,7 +1,7 @@
 .WeatherForecast {
   text-align: center;
-  color: #555555;
-  border-top: 2px solid #c3e9e4;
+  color: #092238;
+  border-top: 2px solid #d3dddcda;
   margin: 25px 0;
 }
 
@@ -11,12 +11,13 @@
 }
 
 .forecastTempMin {
-  opacity: 0.8;
+  opacity: 0.7;
   margin-left: 5px;
 }
 
 .forecastDay {
   margin-top: 35px;
   font-size: 14px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
