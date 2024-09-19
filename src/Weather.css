@@ -58,6 +58,12 @@ p {
   color: #092238;
 }
 
+.description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
 .todaysWeather {
   display: flex;
   justify-content: space-between;
@@ -105,17 +111,19 @@ ul {
   .Weather h1 {
     font-size: 25px;
   }
+
   .Weather li,
   p {
     font-size: 12px;
   }
+
   .temperature {
     font-size: 46px;
     margin-top: 20px;
   }
 
   .Weather .unit {
-    font-size: 18px;
+    font-size: 17px;
     top: -52px;
     right: -60px;
   }
@@ -126,5 +134,9 @@ ul {
 
   .btn-info {
     font-size: 11px;
+  }
+
+  .description {
+    font-size: 13px;
   }
 }
