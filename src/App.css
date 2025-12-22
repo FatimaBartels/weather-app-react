@@ -5,13 +5,13 @@
 
 .App footer {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin: 10px 0;
-  color: red;
 }
 
 .App a {
   color: #092238;
+
   text-decoration: none;
 }
 
